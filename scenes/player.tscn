@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cm5som1eol617"]
+[gd_scene load_steps=15 format=3 uid="uid://cm5som1eol617"]
 
 [ext_resource type="Texture2D" uid="uid://c1xgvsowed65e" path="res://sprites/dragon/dinoCharactersVersion1.1/sheets/DinoSprites - vita.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://2sf2ht5yecdn" path="res://scenes/player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -87,7 +88,8 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5q5h1"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

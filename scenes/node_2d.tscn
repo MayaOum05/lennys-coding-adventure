@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=4 uid="uid://8vs8564g5vni"]
+[gd_scene load_steps=14 format=4 uid="uid://8vs8564g5vni"]
 
 [ext_resource type="Script" uid="uid://b4dsaqgwmikt7" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://sngfbaagk58b" path="res://tileset2.png" id="2_0hol4"]
 [ext_resource type="Script" uid="uid://d2jo72d6xokos" path="res://parallax_background.gd" id="4_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://doq2lhwm3shy3" path="res://scenes/enemy.tscn" id="5_j7wrs"]
 [ext_resource type="Texture2D" uid="uid://d1s8ba81dhq4b" path="res://Forest.png" id="5_kdubu"]
-[ext_resource type="PackedScene" uid="uid://cm5som1eol617" path="res://scenes/Player.tscn" id="6_fws66"]
+[ext_resource type="PackedScene" uid="uid://cm5som1eol617" path="res://scenes/player.tscn" id="6_fws66"]
+[ext_resource type="Script" uid="uid://205rfmj5v00f" path="res://scenes/game_manager.gd" id="7_hh0fu"]
+[ext_resource type="PackedScene" uid="uid://x7whysy5o877" path="res://scenes/Popup.tscn" id="8_3m5ht"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("2_0hol4")
@@ -230,24 +232,30 @@ normal = Vector2(1, 0)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rj586"]
 normal = Vector2(-1, 0)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7wrs"]
+size = Vector2(534, 20)
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_epypp")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(12, 2)
 tile_map_data = PackedByteArray("AAAAAAoAGQADAAEAAAABAAoAGQADAAEAAAACAAoAGQADAAEAAAADAAoAGQADAAEAAAAEAAoAGQADAAEAAAAFAAoAGQADAAEAAAAGAAoAGQADAAEAAAAHAAoAGQADAAEAAAAIAAoAGQADAAEAAAAJAAoAGQADAAEAAAAKAAoAGQADAAEAAAALAAoAGQADAAEAAAAMAAoAGQADAAEAAAANAAoAGQADAAEAAAAOAAoAGQADAAEAAAAPAAoAGQADAAEAAAAQAAoAGQADAAEAAAARAAoAGQADAAEAAAD9/woAGQADAAEAAAD+/woAGQADAAEAAAD//woAGQADAAEAAAASAAoAGQADAAEAAAATAAoAGQADAAEAAAAUAAoAGQADAAEAAAAVAAoAGQADAAEAAAAWAAoAGQADAAEAAAAXAAoAGQADAAEAAAAYAAoAGQADAAEAAAAZAAoAGQADAAEAAAAaAAoAGQADAAEAAAAbAAoAGQADAAEAAAAcAAoAGQADAAEAAAAdAAoAGQADAAEAAAAeAAoAGQADAAEAAAAfAAoAGQADAAEAAAAgAAoAGQADAAEAAAAhAAoAGQADAAEAAAAiAAoAGQADAAEAAAAjAAoAGQADAAEAAAAkAAoAGQADAAEAAAAlAAoAGQADAAEAAAAmAAoAGQADAAEAAAAnAAoAGQADAAEAAAAoAAoAGQADAAEAAAApAAoAGQADAAEAAAAqAAoAGQADAAEAAAArAAoAGQADAAEAAAAsAAoAGQADAAEAAAAtAAoAGQADAAEAAAAuAAoAGQADAAEAAAAvAAoAGQADAAEAAAAwAAoAGQADAAEAAAAxAAoAGQADAAEAAAAyAAoAGQADAAEAAAAzAAoAGQADAAEAAAA0AAoAGQADAAEAAAA1AAoAGQADAAEAAAA2AAoAGQADAAEAAAA3AAoAGQADAAEAAAA4AAoAGQADAAEAAAA5AAoAGQADAAEAAAA6AAoAGQADAAEAAAA7AAoAGQADAAEAAAA8AAoAGQADAAEAAAA=")
 tile_set = SubResource("TileSet_epypp")
+collision_visibility_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 zoom = Vector2(4, 4)
 
 [node name="WorldBuilder" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBuilder"]
 shape = SubResource("WorldBoundaryShape2D_d21ai")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldBuilder"]
-position = Vector2(288, -1)
+position = Vector2(267, 150)
 shape = SubResource("WorldBoundaryShape2D_rj586")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -270,7 +278,19 @@ texture = ExtResource("5_kdubu")
 centered = false
 
 [node name="Player" parent="." instance=ExtResource("6_fws66")]
-position = Vector2(89, 139)
+position = Vector2(69, 151)
+collision_layer = 0
 
 [node name="Enemy" parent="." instance=ExtResource("5_j7wrs")]
-position = Vector2(172, 136)
+position = Vector2(245, 152)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(231, 174)
+shape = SubResource("RectangleShape2D_j7wrs")
+
+[node name="GameManager" type="Node2D" parent="."]
+script = ExtResource("7_hh0fu")
+
+[node name="QuestionPopup" parent="GameManager" instance=ExtResource("8_3m5ht")]
