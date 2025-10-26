@@ -5,3 +5,4 @@ res://scenes/enemy.tscn
 res://scenes/Popup.tscn
 res://scenes/popup.gd
 res://scenes/game_manager.gd
+res://scenes/Panel.tscn

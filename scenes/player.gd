@@ -1,29 +1,57 @@
-extends CharacterBody2D
+extends Node
 
-const SPEED := 150.0
-const JUMP_VELOCITY := -420.0
-const GRAVITY := 1100.0
+@export var popup_scene: PackedScene
+var popup: Node
 
-@onready var anim := $AnimatedSprite2D
+var question_bank = [
+	"Write code that returns 2 + 2.",
+	"Write a function that prints 'Hello World'.",
+	"Declare a variable named x and set it to 10.",
+	"Write a while loop that counts to 5.",
+	"Return the larger of two numbers."
+]
 
-func _physics_process(delta: float) -> void:
-	if get_tree().paused:
-		anim.play("idle")
+
+var current_enemy: Node = null
+
+func _ready():
+	if popup_scene:
+		popup = popup_scene.instantiate()
+		add_child(popup)
+		popup.visible = false
+	else:
+		push_error("popup_scene not assigned in Inspector!")
+
+
+func start_encounter(enemy: Node):
+	current_enemy = enemy
+	get_tree().paused = true
+
+	var q = question_bank[randi() % question_bank.size()]
+	popup.show_question(q)
+
+	if not popup.answer_submitted.is_connected(_on_answer_submitted):
+		popup.answer_submitted.connect(_on_answer_submitted)
+
+func _on_answer_submitted(answer: String):
+	if answer.strip_edges() == "":
+		_print_wrong("You must write something!")
 		return
 
-	if not is_on_floor():
-		velocity.y += GRAVITY * delta
+	_print_correct()
+	current_enemy.on_defeated()
 
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction != 0:
-		velocity.x = direction * SPEED
-		anim.flip_h = direction < 0  
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+	get_tree().paused = false
+	popup.hide_question()
+	current_enemy = null
 
-	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
-		velocity.y = JUMP_VELOCITY
+func _print_correct():
+	print("Correct! Gained robot part!")
 
-	anim.play("idle")
-
-	move_and_slide()
+func _print_wrong(msg: String):
+	print("Incorrect:", msg)
+	# TODO: Apply health damage
+	# For now, still unpause game:
+	get_tree().paused = false
+	popup.hide_question()
+	current_enemy = null

@@ -3,6 +3,7 @@ extends Node
 @onready var popup := $QuestionPopup
 @onready var http := $HTTPRequest
 
+
 var current_enemy = null
 
 func start_encounter(enemy):
@@ -15,7 +16,7 @@ func start_encounter(enemy):
 
 func _on_answer_submitted(answer: String):
 	var payload = {
-		"question": popup.question_label.text,
+		"question": popup.get_question(),
 		"answer": answer
 	}
 	var json = JSON.stringify(payload)

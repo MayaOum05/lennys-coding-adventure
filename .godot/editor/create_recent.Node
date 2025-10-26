@@ -1,10 +1,10 @@
-HTTPRequest
-Node2D
 Button
 TextEdit
+PanelContainer
+HTTPRequest
+Node2D
 Label
 VBoxContainer
-PanelContainer
 CanvasLayer
 CollisionShape2D
 StaticBody2D

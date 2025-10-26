@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://8vs8564g5vni"]
+[gd_scene load_steps=12 format=4 uid="uid://8vs8564g5vni"]
 
 [ext_resource type="Script" uid="uid://b4dsaqgwmikt7" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://sngfbaagk58b" path="res://tileset2.png" id="2_0hol4"]
@@ -6,8 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://doq2lhwm3shy3" path="res://scenes/enemy.tscn" id="5_j7wrs"]
 [ext_resource type="Texture2D" uid="uid://d1s8ba81dhq4b" path="res://Forest.png" id="5_kdubu"]
 [ext_resource type="PackedScene" uid="uid://cm5som1eol617" path="res://scenes/player.tscn" id="6_fws66"]
-[ext_resource type="Script" uid="uid://205rfmj5v00f" path="res://scenes/game_manager.gd" id="7_hh0fu"]
-[ext_resource type="PackedScene" uid="uid://x7whysy5o877" path="res://scenes/Popup.tscn" id="8_3m5ht"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("2_0hol4")
@@ -289,10 +287,3 @@ position = Vector2(245, 152)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(231, 174)
 shape = SubResource("RectangleShape2D_j7wrs")
-
-[node name="GameManager" type="Node2D" parent="."]
-script = ExtResource("7_hh0fu")
-
-[node name="QuestionPopup" parent="GameManager" instance=ExtResource("8_3m5ht")]
-
-[node name="HTTPRequest" type="HTTPRequest" parent="GameManager"]
