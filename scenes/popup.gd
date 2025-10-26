@@ -14,7 +14,7 @@ func _ready():
 
 func show_question(text: String):
 	question_label.text = text
-	answer_box.text = ""  # Clear previous input
+	answer_box.text = ""  
 	visible = true
 	panel.visible = true
 	answer_box.grab_focus()

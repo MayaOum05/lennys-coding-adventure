@@ -1,0 +1,53 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1761464620
+Forest.png::CompressedTexture2D::9023336283960589699::1761464556::1761464622::1::::<><><>0<>0<>963306b2b2b9969202c5f9740afb9160<>res://.godot/imported/Forest.png-2dbc0610a0432b2fe362836d1230ff1e.ctex::
+icon.svg::CompressedTexture2D::2393515929358477635::1761464556::1761464622::1::::<><><>0<>0<>a09964e8003414a51b6e8ac1c8dcb07f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene::3092601958203095094::1761464556::0::1::::<><><>0<>0<><>::
+node_2d.gd::GDScript::4429184038986386702::1761464556::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::2360737234875272262::1761464556::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn<>uid://dxyw40hmfobq5::::res://player.tscn
+parallax_background.gd::GDScript::9073848836601066006::1761464556::0::1::::<>ParallaxBackground<><>0<>0<><>::
+player-idle-1.png::CompressedTexture2D::1104596198480879035::1761464556::1761464622::1::::<><><>0<>0<>efbd1f6e3b8a6246052f761e22d75da4<>res://.godot/imported/player-idle-1.png-2ec0d3ceeef695daa7af9fee4b4e7bc7.ctex::
+player.tscn::PackedScene::8824539407165430082::1761464556::0::1::::<><><>0<>0<><>::uid://c1xgvsowed65e::::res://sprites/dragon/dinoCharactersVersion1.1/sheets/DinoSprites - vita.png
+player_idle_1.gd::GDScript::5145691006214726370::1761464556::0::1::::<>Sprite2D<><>0<>0<><>::
+README.md::TextFile::-1::1761464556::0::1::::<><><>0<>0<><>::
+tileset2.png::CompressedTexture2D::1290609379745280267::1761464556::1761464622::1::::<><><>0<>0<>544af43119bbb43acbf7260608f6b89c<>res://.godot/imported/tileset2.png-7b4d80e551f7e661abcb9a5cc9d938ee.ctex::
+::res://scenes/::1761464556
+enemy.gd::GDScript::6845777389135743196::1761464556::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy.tscn::PackedScene::8176595310846868408::1761464556::0::1::::<><><>0<>0<><>::uid://c4se7offorv7a::::res://scenes/enemy.gd<>uid://b560eo8fs2oxx::::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Idle.png
+main.tscn::PackedScene::7792428678090859047::1761464556::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://cm5som1eol617::::res://scenes/Player.tscn<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn
+node_2d.tscn::PackedScene::2360737234875272262::1761464556::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://cm5som1eol617::::res://scenes/Player.tscn
+player.tscn::PackedScene::5678157401294884936::1761464556::0::1::::<><><>0<>0<><>::uid://c1xgvsowed65e::::res://sprites/dragon/dinoCharactersVersion1.1/sheets/DinoSprites - vita.png
+::res://sprites/::1761464556
+::res://sprites/dragon/::1761464556
+::res://sprites/dragon/dinoCharactersVersion1.1/::1761464556
+changelog.txt::TextFile::-1::1761464556::0::1::::<><><>0<>0<><>::
+::res://sprites/dragon/dinoCharactersVersion1.1/aseprite/::1761464556
+::res://sprites/dragon/dinoCharactersVersion1.1/gifs/::1761464556
+::res://sprites/dragon/dinoCharactersVersion1.1/misc/::1761464556
+bg.png::CompressedTexture2D::3467636702150417712::1761464556::1761464623::1::::<><><>0<>0<>02bee6d3a1d0087cc231d23805870522<>res://.godot/imported/bg.png-79b7fee916ebda4db3531e66f38c5c89.ctex::
+shadow_2.png::CompressedTexture2D::1988509492141222909::1761464556::1761464622::1::::<><><>0<>0<>3510523a8b3470abb5a690fd68c91eb1<>res://.godot/imported/shadow_2.png-33ea6122c5f869e4f327158ddb5692b4.ctex::
+::res://sprites/dragon/dinoCharactersVersion1.1/sheets/::1761464556
+DinoSprites - doux.png::CompressedTexture2D::5349929573219370277::1761464556::1761464622::1::::<><><>0<>0<>e0ba844972a70097091e82211de0e835<>res://.godot/imported/DinoSprites - doux.png-1e9272c6cf6703ee3c9d144bfb51b04e.ctex::
+DinoSprites - mort.png::CompressedTexture2D::7821688377288243716::1761464556::1761464622::1::::<><><>0<>0<>cf6c42a012dcec8fca05ec3e3a3e24e3<>res://.godot/imported/DinoSprites - mort.png-2104ea3b7fd5e7092cb6e19067b4a8d5.ctex::
+DinoSprites - tard.png::CompressedTexture2D::5011567830554553460::1761464556::1761464622::1::::<><><>0<>0<>c47f3defec5999ae3a04f565f791069a<>res://.godot/imported/DinoSprites - tard.png-dd710d41f3469369cc5a5041919fe52e.ctex::
+DinoSprites - vita.png::CompressedTexture2D::6645634761999664404::1761464556::1761464622::1::::<><><>0<>0<>1a86c85a8b3e3a0dac9194811b2e9052<>res://.godot/imported/DinoSprites - vita.png-952164bec33b4dc393f33f5447e5bd7f.ctex::
+::res://sprites/monsters/::1761464556
+::res://sprites/monsters/Forest_Monsters_FREE/::1761464556
+::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/::1761464556
+::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/::1761464556
+::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/::1761464556
+Mushroom-Attack.png::CompressedTexture2D::388630420901386436::1761464556::1761464622::1::::<><><>0<>0<>6f7adc48b7afb0a63ffc189823dc1e1d<>res://.godot/imported/Mushroom-Attack.png-42875b5fac23f193fcb6242c3bc76671.ctex::
+Mushroom-AttackWithStun.png::CompressedTexture2D::9189769120067736152::1761464556::1761464622::1::::<><><>0<>0<>1e0cb0293ce1608d38ec748ae14891b6<>res://.godot/imported/Mushroom-AttackWithStun.png-205e98a3f6223f91d5efaa009d21a6aa.ctex::
+Mushroom-Die.png::CompressedTexture2D::2556141644786789179::1761464556::1761464622::1::::<><><>0<>0<>a164f233f5260126d09a96c26708b181<>res://.godot/imported/Mushroom-Die.png-c0649c49dc80a7fe5373b072f0eea256.ctex::
+Mushroom-Hit.png::CompressedTexture2D::5436847485685591879::1761464556::1761464622::1::::<><><>0<>0<>bed8b0ff4bfe26337450a49f7a081c9a<>res://.godot/imported/Mushroom-Hit.png-9136a20258333b5e289a2ff8f6d723f2.ctex::
+Mushroom-Idle.png::CompressedTexture2D::6707572541531182073::1761464556::1761464622::1::::<><><>0<>0<>48bc4ca8eb853767cfc011ff3b6c1a4f<>res://.godot/imported/Mushroom-Idle.png-a27855f2422e2bb4b3bd0b5ae4c16cbd.ctex::
+Mushroom-Run.png::CompressedTexture2D::2373605429460499310::1761464556::1761464622::1::::<><><>0<>0<>ae1cb73f73f8bf72d5779409639640d3<>res://.godot/imported/Mushroom-Run.png-c9fec4f5dd63bf4a88bd419fd4c8fd44.ctex::
+Mushroom-Stun.png::CompressedTexture2D::1768551361692847551::1761464556::1761464622::1::::<><><>0<>0<>a6764bd80c2d625017813260e0f54542<>res://.godot/imported/Mushroom-Stun.png-118dbc254b96b18b9d6b9c381cfcb8c1.ctex::
+::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/::1761464556
+Mushroom-Attack.png::CompressedTexture2D::6718113261971065691::1761464556::1761464622::1::::<><><>0<>0<>47ab2adce0acf19c4dba84579119ee4a<>res://.godot/imported/Mushroom-Attack.png-74ef95d5b629c12f33fc718cc90a0dd9.ctex::
+Mushroom-AttackWithStun.png::CompressedTexture2D::5915958890018444249::1761464556::1761464622::1::::<><><>0<>0<>07ee09120eb8bc0e8e6f6374785a5d79<>res://.godot/imported/Mushroom-AttackWithStun.png-9f9da6554de0382afa19826851d55bce.ctex::
+Mushroom-Die.png::CompressedTexture2D::3493468010518431464::1761464556::1761464622::1::::<><><>0<>0<>cf9bbe1eeb83af935f31bb9f0869ce9d<>res://.godot/imported/Mushroom-Die.png-5211c4dab2f4ffc37c52fd912f4f668a.ctex::
+Mushroom-Hit.png::CompressedTexture2D::4573354133941018230::1761464556::1761464622::1::::<><><>0<>0<>f7addc086e8f00fecdb0e115268e47c1<>res://.godot/imported/Mushroom-Hit.png-eb08f458e8a92cdcad08fd04c2a73d32.ctex::
+Mushroom-Idle.png::CompressedTexture2D::4557607557762463925::1761464556::1761464622::1::::<><><>0<>0<>9cf214bbbf0f16cdd41c61cecb4840fe<>res://.godot/imported/Mushroom-Idle.png-a049fc9ca260542b4985bfd062b3d681.ctex::
+Mushroom-Run.png::CompressedTexture2D::99236778033391583::1761464556::1761464622::1::::<><><>0<>0<>5e2a806fcff322bc37b221b830ff42af<>res://.godot/imported/Mushroom-Run.png-7a06d5354e74b3ccb76cc900b04b15d4.ctex::
+Mushroom-Stun.png::CompressedTexture2D::1041388864172516090::1761464556::1761464622::1::::<><><>0<>0<>bab8ad8fccccf692af521ddc03ab8e2a<>res://.godot/imported/Mushroom-Stun.png-ab4f985061db4fb6c28df5a2263654dd.ctex::

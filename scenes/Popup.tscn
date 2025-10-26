@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://1yb3pm5kupf2" path="res://scenes/popup.gd" id="1_4c2u4"]
 
-[node name="Popup" type="CanvasLayer"]
+[node name="Panel" type="CanvasLayer"]
 script = ExtResource("1_4c2u4")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]

@@ -294,3 +294,5 @@ shape = SubResource("RectangleShape2D_j7wrs")
 script = ExtResource("7_hh0fu")
 
 [node name="QuestionPopup" parent="GameManager" instance=ExtResource("8_3m5ht")]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="GameManager"]
