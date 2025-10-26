@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://8vs8564g5vni"]
+[gd_scene load_steps=13 format=4 uid="uid://8vs8564g5vni"]
 
 [ext_resource type="Script" uid="uid://b4dsaqgwmikt7" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://sngfbaagk58b" path="res://tileset2.png" id="2_0hol4"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://doq2lhwm3shy3" path="res://scenes/enemy.tscn" id="5_j7wrs"]
 [ext_resource type="Texture2D" uid="uid://d1s8ba81dhq4b" path="res://Forest.png" id="5_kdubu"]
 [ext_resource type="PackedScene" uid="uid://cm5som1eol617" path="res://scenes/player.tscn" id="6_fws66"]
+[ext_resource type="PackedScene" uid="uid://xwjbn2pmtevb" path="res://scenes/QuestionUI.tscn" id="7_fws66"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("2_0hol4")
@@ -280,7 +281,10 @@ position = Vector2(69, 151)
 collision_layer = 0
 
 [node name="Enemy" parent="." instance=ExtResource("5_j7wrs")]
-position = Vector2(245, 152)
+position = Vector2(225, 153)
+question_ui_path = NodePath("../QuestionUI")
+
+[node name="QuestionUI" parent="." instance=ExtResource("7_fws66")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761468061
+::res://::1761484790
 Forest.png::CompressedTexture2D::9023336283960589699::1761464556::1761464622::1::::<><><>0<>0<>963306b2b2b9969202c5f9740afb9160<>res://.godot/imported/Forest.png-2dbc0610a0432b2fe362836d1230ff1e.ctex::
 icon.svg::CompressedTexture2D::2393515929358477635::1761464556::1761464622::1::::<><><>0<>0<>a09964e8003414a51b6e8ac1c8dcb07f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.tscn::PackedScene::3092601958203095094::1761464556::0::1::::<><><>0<>0<><>::
@@ -11,18 +11,20 @@ player.tscn::PackedScene::8824539407165430082::1761464556::0::1::::<><><>0<>0<><
 player_idle_1.gd::GDScript::5145691006214726370::1761464556::0::1::::<>Sprite2D<><>0<>0<><>::
 README.md::TextFile::-1::1761464556::0::1::::<><><>0<>0<><>::
 tileset2.png::CompressedTexture2D::1290609379745280267::1761464556::1761464622::1::::<><><>0<>0<>544af43119bbb43acbf7260608f6b89c<>res://.godot/imported/tileset2.png-7b4d80e551f7e661abcb9a5cc9d938ee.ctex::
-::res://backend/::1761468371
+::res://backend/::1761473540
 requirements.txt::TextFile::-1::1761468383::0::1::::<><><>0<>0<><>::
-::res://scenes/::1761469228
-enemy.gd::GDScript::6845777389135743196::1761464556::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy.tscn::PackedScene::8176595310846868408::1761466480::0::1::::<><><>0<>0<><>::uid://c4se7offorv7a::::res://scenes/enemy.gd<>uid://b560eo8fs2oxx::::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Idle.png
+::res://scenes/::1761484379
+enemy.gd::GDScript::6845777389135743196::1761484133::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy.tscn::PackedScene::8176595310846868408::1761484133::0::1::::<><><>0<>0<><>::uid://c4se7offorv7a::::res://scenes/enemy.gd<>uid://b560eo8fs2oxx::::res://sprites/monsters/Forest_Monsters_FREE/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Idle.png
+game_manager.gd::GDScript::1948560371962013667::1761469538::0::1::::<>Node<><>0<>0<><>::
 main.tscn::PackedScene::7792428678090859047::1761464556::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://cm5som1eol617::::res://scenes/Player.tscn<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn
-node_2d.tscn::PackedScene::2360737234875272262::1761469310::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://cm5som1eol617::::res://scenes/player.tscn<>uid://205rfmj5v00f::::res://scenes/game_manager.gd<>uid://x7whysy5o877::::res://scenes/Popup.tscn
-player.tscn::PackedScene::5678157401294884936::1761465277::0::1::::<><><>0<>0<><>::uid://c1xgvsowed65e::::res://sprites/dragon/dinoCharactersVersion1.1/sheets/DinoSprites - vita.png<>uid://2sf2ht5yecdn::::res://scenes/player.gd
-player.gd::GDScript::1932609777609244187::1761466414::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Popup.tscn::PackedScene::1681753055700866868::1761469228::0::1::::<><><>0<>0<><>::uid://1yb3pm5kupf2::::res://scenes/popup.gd
-popup.gd::GDScript::1874566527673515009::1761468995::0::1::::<>CanvasLayer<><>0<>0<><>::
-game_manager.gd::GDScript::1948560371962013667::1761467283::0::1::::<>Node<><>0<>0<><>::
+node_2d.tscn::PackedScene::2360737234875272262::1761484378::0::1::::<><><>0<>0<><>::uid://b4dsaqgwmikt7::::res://node_2d.gd<>uid://sngfbaagk58b::::res://tileset2.png<>uid://d2jo72d6xokos::::res://parallax_background.gd<>uid://doq2lhwm3shy3::::res://scenes/enemy.tscn<>uid://d1s8ba81dhq4b::::res://Forest.png<>uid://cm5som1eol617::::res://scenes/player.tscn<>uid://xwjbn2pmtevb::::res://scenes/QuestionUI.tscn
+player.gd::GDScript::1932609777609244187::1761482055::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5678157401294884936::1761482427::0::1::::<><><>0<>0<><>::uid://c1xgvsowed65e::::res://sprites/dragon/dinoCharactersVersion1.1/sheets/DinoSprites - vita.png<>uid://2sf2ht5yecdn::::res://scenes/player.gd
+QuestionPopup.tscn::PackedScene::6871367557235328383::1761482810::0::1::::<><><>0<>0<><>::uid://b82qqb4or5xpc::::res://scenes/question_popup.gd
+QuestionUI.tscn::PackedScene::1660308678204453587::1761483953::0::1::::<><><>0<>0<><>::uid://bsfkq514cm1pb::::res://scenes/question_ui.gd
+question_popup.gd::GDScript::4759390865677223516::1761482818::0::1::::<>CharacterBody2D<><>0<>0<><>::
+question_ui.gd::GDScript::3660779117764347143::1761483953::0::1::::<>Control<><>0<>0<><>::
 ::res://sprites/::1761467947
 ::res://sprites/dragon/::1761467947
 ::res://sprites/dragon/dinoCharactersVersion1.1/::1761467947

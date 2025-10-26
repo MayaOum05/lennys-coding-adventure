@@ -1,11 +1,13 @@
 Button
+Label
+Panel
+Control
+CanvasLayer
 TextEdit
 PanelContainer
 HTTPRequest
 Node2D
-Label
 VBoxContainer
-CanvasLayer
 CollisionShape2D
 StaticBody2D
 Node3D

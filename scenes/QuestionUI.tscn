@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://xwjbn2pmtevb"]
+
+[ext_resource type="Script" uid="uid://bsfkq514cm1pb" path="res://scenes/question_ui.gd" id="1_3dlul"]
+
+[node name="QuestionUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3dlul")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuestionLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "What is 1 + 1?"
+
+[node name="Choice0" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Choice1" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Choice2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Choice3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

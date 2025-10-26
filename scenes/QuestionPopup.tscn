@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://c45sojh11cccd"]
+
+[ext_resource type="Script" uid="uid://b82qqb4or5xpc" path="res://scenes/question_popup.gd" id="1_jucd1"]
+
+[node name="QuestionPopup" type="CanvasLayer"]
+script = ExtResource("1_jucd1")
+
+[node name="Panel" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuestionLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AnswerBox" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="SubmitButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
