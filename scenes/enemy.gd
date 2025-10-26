@@ -17,7 +17,7 @@ func _ready():
 	$DetectionArea.body_entered.connect(_on_player_enter)
 	$DetectionArea.body_exited.connect(_on_player_exit)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if player_near and not get_tree().paused:
 		var dir = (player.global_position - global_position).normalized()
 		velocity = dir * chase_speed

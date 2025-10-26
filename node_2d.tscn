@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://8vs8564g5vni"]
+[gd_scene load_steps=11 format=4 uid="uid://8vs8564g5vni"]
 
 [ext_resource type="Script" uid="uid://b4dsaqgwmikt7" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://sngfbaagk58b" path="res://tileset2.png" id="2_0hol4"]
 [ext_resource type="Script" uid="uid://d2jo72d6xokos" path="res://parallax_background.gd" id="4_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://d1s8ba81dhq4b" path="res://Forest.png" id="5_kdubu"]
+[ext_resource type="PackedScene" uid="uid://doq2lhwm3shy3" path="res://scenes/enemy.tscn" id="5_rj586"]
+[ext_resource type="PackedScene" uid="uid://dxyw40hmfobq5" path="res://player.tscn" id="7_ir8iy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("2_0hol4")
@@ -253,7 +255,7 @@ script = ExtResource("4_q6r6c")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Background-1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(1, -45)
 scale = Vector2(0.30967748, 0.26860014)
 texture = ExtResource("5_kdubu")
@@ -261,8 +263,14 @@ centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+[node name="Background-2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(288, -45)
 scale = Vector2(0.30967748, 0.26860014)
 texture = ExtResource("5_kdubu")
 centered = false
+
+[node name="Enemy" parent="." instance=ExtResource("5_rj586")]
+position = Vector2(280, 118)
+
+[node name="player" parent="." instance=ExtResource("7_ir8iy")]
+position = Vector2(48, 139)
